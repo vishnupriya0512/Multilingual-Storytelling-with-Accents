@@ -7,7 +7,7 @@ from io import BytesIO
 #from openai import GPT, Completion
 
 # Initialize OpenAI GPT-3.5-turbo model
-openai.api_key = "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"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 client = openai.Client(api_key=openai.api_key)
 
 #gpt = GPT(engine="davinci", api_key=openai.api_key)
